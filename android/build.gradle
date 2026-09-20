@@ -1,0 +1,25 @@
+buildscript {
+  repositories { google(); mavenCentral() }
+  dependencies {
+    classpath("com.android.tools.build:gradle:8.11.0")
+    classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20")
+  }
+}
+apply plugin: 'com.android.library'
+apply plugin: 'org.jetbrains.kotlin.android'
+apply plugin: 'com.facebook.react'
+
+def setting = { name, fallback -> rootProject.ext.has(name) ? rootProject.ext.get(name) : fallback }
+android {
+  namespace 'com.foldable'
+  compileSdkVersion setting('compileSdkVersion', 36)
+  defaultConfig { minSdkVersion setting('minSdkVersion', 24); targetSdkVersion setting('targetSdkVersion', 36) }
+  sourceSets.main.java.srcDirs += ['build/generated/source/codegen/java']
+}
+react { jsRootDir = file('../src'); libraryName = 'RNIOSHingeSpec'; codegenJavaPackageName = 'com.foldable' }
+repositories { google(); mavenCentral() }
+dependencies {
+  implementation 'com.facebook.react:react-android'
+  implementation 'androidx.window:window:1.5.1'
+  implementation 'androidx.window:window-java:1.5.1'
+}

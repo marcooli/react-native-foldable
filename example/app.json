@@ -1,0 +1,18 @@
+{
+  "expo": {
+    "name": "Hinge Lab",
+    "slug": "hinge-lab",
+    "version": "1.0.0",
+    "newArchEnabled": true,
+    "plugins": [
+      "./plugins/withSceneLifecycle"
+    ],
+    "ios": {
+      "bundleIdentifier": "dev.hingelab.example",
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "dev.hingelab.example"
+    }
+  }
+}
