@@ -4,6 +4,13 @@ Experimental foldable-device utilities for React Native Fabric on iOS and Androi
 hinge angle, native posture, display features, and fold-aware pane geometry.
 Each provider observes its own view/window; angle and layout availability are independent.
 
+## iPhone Duo demo
+
+[Watch the iPhone Duo example — Foldable Lab (MP4, 6.9 MB)](media/iphone-duo-demo.mp4)
+
+Screen recording of the example app on iPhone Duo. Screen identity labels marked
+`heuristic` are estimates, not verified native screen identity.
+
 ## Current state
 
 **Experimental alpha (`0.1.0-alpha.0`). Source is available on GitHub; this project
