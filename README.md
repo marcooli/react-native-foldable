@@ -6,7 +6,7 @@ Each provider observes its own view/window; angle and layout availability are in
 
 ## iPhone Duo demo
 
-[Watch the iPhone Duo example — Foldable Lab (MP4, 6.9 MB)](media/iphone-duo-demo.mp4)
+[Watch the iPhone Duo example — Foldable Lab (MOV, 2.6 MB)](media/iphone-duo-demo.mov)
 
 Screen recording of the example app on iPhone Duo. Screen identity labels marked
 `heuristic` are estimates, not verified native screen identity.
